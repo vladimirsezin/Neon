@@ -36,16 +36,12 @@ body {
     border-radius: 50%;
     border: none;
 }
-.contacts-nav__link:hover,
-.modal__link:hover,
-.footer__link:hover{
-    color:gray;
-} 
+
 .contacts-nav__link:focus:not(:active),
 .modal__link:focus:not(:active),
 .footer__link:focus:not(:active) {
     background-color:transparent !important;
-   
+    color:gray;
 }
 
 .contacts-nav__icon,
@@ -234,4 +230,9 @@ body {
         line-height: 1.4;
         margin-bottom: 0.3rem; 
     }
+    .contacts-nav__link:focus:not(:active),
+.modal__link:focus:not(:active),
+.footer__link:focus:not(:active) {
+    -webkit-tap-highlight-color: transparent;
+}
 }
