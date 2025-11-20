@@ -66,6 +66,8 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 0.6rem;
+    margin-top:0.8rem;
+    border-radius: 0.6rem;
 }
 
 .product-card__button {
@@ -77,6 +79,7 @@ body {
 }
 
 .modal {
+    background-color: var(--color-dark);
     display: none;
     position: fixed;
     z-index: 1;
@@ -91,6 +94,12 @@ body {
 }
 
 .modal__content {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-darker);
     margin: 5% auto;
     padding: 1.25rem;
@@ -101,6 +110,9 @@ body {
 }
 
 .modal__close {
+    position:absolute;
+    top:5px;
+    right:15px;
     color: #aaa;
     float: right;
     font-size: 1.75rem;
@@ -188,17 +200,7 @@ body {
 .text-card__text {
     line-height: 1.4;
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
+
 
 @media(max-width: 460px) { 
     .header__logo {
